@@ -158,6 +158,7 @@ jobs:
       - test.integration.security.kube
     requirements: [kind]
     modifiers: [skipped, optional, hidden]
+    timeout: 1h
     env:
       - name: TEST_SELECT
         value: "-multicluster"
